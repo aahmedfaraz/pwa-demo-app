@@ -36,3 +36,34 @@ Change
 serviceWorkerRegistration.unregister();
 Into
 serviceWorkerRegistration.register();
+
+# Step 3: Install Firebase (Remember use YARN)
+
+- I am using firebase version 8.10.0 to use namespace approach, you can use latest versions but 9 and above are using modular approach.
+- Install firebase using command "yarn add firebase@8.10.0".
+- Create a new Project in your firebase account to get firebase configs.
+
+# Step 4: Create firebase.js/firebase.tsx in src file
+
+- import firebase.
+- Copy configs from firebase project.
+- Initialize firebase app.
+- export firebase.
+
+# Step 5: Get token
+
+- Import firebase(exported from firebase.js)
+- Use firebase.messaging() then requestPermission() then getToken(), As in App.tsx.
+
+# Step 6: Create firebase-messaging-sw.js file in public folder
+
+- Import required scripts
+- Again initialize app using configs
+- call firebase.messaging() to use to showNotifications as metioned in firebase-messaging-sw.js file.
+
+# Step 7: All Done, Cheers!
+
+- Deploy the app
+- Use Cloud messaging on firebase and send notifications
+
+#### Good Job!
