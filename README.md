@@ -29,3 +29,10 @@ npx create-react-app . --template cra-template-pwa-typescript
 (Remember Typescript is important)
 
 and you have to use single package manager all the way; either NPM or YARN, but don't mix them.
+
+# Step 2: Register ServiceWorker in src > index.js or index.tsx
+
+Change
+serviceWorkerRegistration.unregister();
+Into
+serviceWorkerRegistration.register();
