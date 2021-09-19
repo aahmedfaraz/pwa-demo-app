@@ -1,5 +1,7 @@
 ## Basic Information
 
+- Site URL: [https://pwa-demo-ahmedfaraz.netlify.app/](https://pwa-demo-ahmedfaraz.netlify.app/)
+
 I will be using:
 
 - create-react-app template (cra-template-pwa-typescript).
