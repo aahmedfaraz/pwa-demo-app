@@ -63,7 +63,7 @@ serviceWorkerRegistration.register();
 
 # Step 7: All Done, Cheers!
 
-- Deploy the app
-- Use Cloud messaging on firebase and send notifications
+- Deploy the app on a secured connection (https://...), you can use hosting from firebase, netlify or any site offering secured connection.
+- Use Cloud messaging on firebase and send notifications.
 
 #### Good Job!

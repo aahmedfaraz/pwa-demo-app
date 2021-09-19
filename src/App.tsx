@@ -1,18 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import firebase from './firebase';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
 
-  const messaging = firebase.messaging();
-  messaging.requestPermission().then(() => {
-    return messaging.getToken();
-  }).then(token => {
-    console.log('token', token)
-  }).catch(err => {
-    console.error('error', err)
-  })
+  useEffect(() => {
+    const messaging = firebase.messaging();
+    messaging.requestPermission().then(() => {
+      return messaging.getToken();
+    }).then(token => {
+      prompt('token', token);
+    }).catch(err => {
+      console.error('error', err)
+    })
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div className="App">
